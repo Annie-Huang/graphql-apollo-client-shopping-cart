@@ -1,0 +1,7 @@
+Build A Shopping Cart with React and Apollo Client (https://www.youtube.com/watch?v=TYHx-AyNZDA)
+
+https://github.com/Annie-Huang/graphql-apollo-client-shopping-cart
+
+---------------------------------------------------------------------------------------
+
+PS C:\react> npx create-react-app graphql-apollo-client-shopping-cart --use-npm
