@@ -5,10 +5,11 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ApolloClient, ApolloProvider } from '@apollo/client';
 import { ChakraProvider } from '@chakra-ui/react';
+import { CustomInMemoryCache } from './cache';
 
 const client = new ApolloClient({
   uri: 'http://localhost:4000',
-  cache: CustomInMemoryCache, // Not defined yet.
+  cache: CustomInMemoryCache,
 });
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
