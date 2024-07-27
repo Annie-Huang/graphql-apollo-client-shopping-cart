@@ -7,3 +7,4 @@ https://v2.chakra-ui.com/getting-started
 
 PS C:\react> npx create-react-app graphql-apollo-client-shopping-cart --use-npm
 PS C:\react\graphql-apollo-client-shopping-cart> npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
+PS C:\react\graphql-apollo-client-shopping-cart> npm install @apollo/client
