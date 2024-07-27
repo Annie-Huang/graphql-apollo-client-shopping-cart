@@ -1,4 +1,5 @@
 import './App.css';
+import { Grid } from '@chakra-ui/react';
 
 // https://pastebin.com/fF66w1qf
 const StoreItems = [
@@ -31,7 +32,16 @@ const StoreItems = [
 function App() {
   return (
     <div className='App'>
-      <header className='App-header'></header>
+      <header className='App-header'>
+        <h1>Welcome to my store!</h1>
+        <br /> <br />
+        <h2>Store Items</h2>
+        <Grid templateColumns='repeat(2, 1fr)' gap={6}>
+          {StoreItems.map((item) => (
+            <p>{item.name}</p>
+          ))}
+        </Grid>
+      </header>
     </div>
   );
 }
