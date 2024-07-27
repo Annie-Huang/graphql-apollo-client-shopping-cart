@@ -4,6 +4,7 @@ https://github.com/Annie-Huang/graphql-apollo-client-shopping-cart
 
 https://v2.chakra-ui.com/getting-started
 https://www.apollographql.com/docs/react/get-started
+https://pastebin.com/fF66w1qf
 ---------------------------------------------------------------------------------------
 
 PS C:\react> npx create-react-app graphql-apollo-client-shopping-cart --use-npm
