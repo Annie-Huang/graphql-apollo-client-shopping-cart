@@ -13,7 +13,7 @@ export const CustomInMemoryCache = new InMemoryCache({
       fields: {
         cartItems: {
           read() {
-            return cartItemsVar;
+            return cartItemsVar();
           },
         },
       },

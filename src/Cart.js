@@ -11,7 +11,7 @@ function Cart() {
 
   if (loading) return 'Loading cart!';
   if (error) return <p>Error: {error.message}</p>;
-  console.log(data);
+  console.log('data=', data.cartItems);
 
   return (
     <>
