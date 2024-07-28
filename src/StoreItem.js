@@ -12,10 +12,23 @@ function StoreItem({ item }) {
   let isInCart = CartItems.some((item) => item.id === id); // Check if an item in the cart matches our item
 
   return (
-    <GridItem bg='blue.700' p={'4'}>
+    <GridItem bg='blue.700' p='4'>
       <Text>{item.name}</Text>
       <Text fontSize='xs'>{item.description}</Text>
       <Text fontSize='xs'>Price: ${item.price}.00</Text>
+      <Button
+        onClick={() =>
+          cartItemsVar(
+            isInCart
+              ? CartItems.filter((item) => item.id !== id)
+              : [...CartItems, item]
+          )
+        }
+        size='xs'
+        textColor='black'
+      >
+        {isInCart ? 'Remove from cart' : 'Add to cart'}
+      </Button>
     </GridItem>
   );
 }
